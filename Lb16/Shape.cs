@@ -8,6 +8,7 @@ namespace Lb16
 
         public double X { get; set; }
         public double Y { get; set; }
+        public float Angle { get; set; }
 
         public Shape()
         {
@@ -25,6 +26,11 @@ namespace Lb16
         {
             X += dx;
             Y += dy;
+        }
+
+        public virtual void Rotate(float angle)
+        {
+            Angle += angle;   // накопичуємо поворот
         }
 
         public abstract void Draw(Graphics g);

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace Lb16
 {
@@ -38,11 +39,20 @@ namespace Lb16
 
         public override void Draw(Graphics g)
         {
-            g.DrawRectangle(Pens.Red,
-                (float)X,
-                (float)Y,
+            g.TranslateTransform(
+                (float)(X + Width / 2),
+                (float)(Y + Height / 2));
+
+            g.RotateTransform(Angle);
+
+            g.DrawRectangle(
+                Pens.Red,
+                (float)(-Width / 2),
+                (float)(-Height / 2),
                 (float)Width,
                 (float)Height);
+
+            g.ResetTransform();
         }
     }
 }

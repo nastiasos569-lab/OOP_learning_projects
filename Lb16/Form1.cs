@@ -129,5 +129,21 @@ namespace Lb16
 
             MessageBox.Show(msg, "Площі фігур");
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float angle = Convert.ToSingle(textBox4.Text);
+                c.Rotate(angle);
+                s.Rotate(angle);
+                r.Rotate(angle);
+                Invalidate();
+            }
+            catch
+            {
+                MessageBox.Show("Введіть кут!");
+            }
+        }
     }
 }
