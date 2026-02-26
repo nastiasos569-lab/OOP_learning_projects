@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\lb17\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\isoscelestriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\isoscelestriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\equilateraltriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\equilateraltriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\righttriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\righttriangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|c:\\users\\user\\source\\repos\\lb17\\lb17\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724514D5-C19C-4CC7-84A9-D5B3A95C4A4E}|lb17\\lb17.csproj|solutionrelative:lb17\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IsoscelesTriangle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\IsoscelesTriangle.cs",
+              "RelativeDocumentMoniker": "lb17\\IsoscelesTriangle.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\IsoscelesTriangle.cs",
+              "RelativeToolTip": "lb17\\IsoscelesTriangle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:08:34.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EquilateralTriangle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\EquilateralTriangle.cs",
+              "RelativeDocumentMoniker": "lb17\\EquilateralTriangle.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\EquilateralTriangle.cs",
+              "RelativeToolTip": "lb17\\EquilateralTriangle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:09:07.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RightTriangle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\RightTriangle.cs",
+              "RelativeDocumentMoniker": "lb17\\RightTriangle.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\RightTriangle.cs",
+              "RelativeToolTip": "lb17\\RightTriangle.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:08:00.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Triangle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Triangle.cs",
+              "RelativeDocumentMoniker": "lb17\\Triangle.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Triangle.cs",
+              "RelativeToolTip": "lb17\\Triangle.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:06:57.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Form1.cs",
+              "RelativeDocumentMoniker": "lb17\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Form1.cs",
+              "RelativeToolTip": "lb17\\Form1.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAHoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:19:19.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Form1.cs",
+              "RelativeDocumentMoniker": "lb17\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb17\\lb17\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "lb17\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:06:45.994Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\lb17\lb17\bin\Debug\lb17.exe.config
+C:\Users\user\source\repos\lb17\lb17\bin\Debug\lb17.exe
+C:\Users\user\source\repos\lb17\lb17\bin\Debug\lb17.pdb
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.Form1.resources
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.Properties.Resources.resources
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.csproj.GenerateResource.cache
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.exe
+C:\Users\user\source\repos\lb17\lb17\obj\Debug\lb17.pdb
