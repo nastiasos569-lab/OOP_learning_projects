@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\lb20\lb20\bin\Debug\lb20.exe.config
+C:\Users\user\source\repos\lb20\lb20\bin\Debug\lb20.exe
+C:\Users\user\source\repos\lb20\lb20\bin\Debug\lb20.pdb
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.Form1.resources
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.Properties.Resources.resources
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.csproj.GenerateResource.cache
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.exe
+C:\Users\user\source\repos\lb20\lb20\obj\Debug\lb20.pdb
