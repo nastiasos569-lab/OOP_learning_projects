@@ -1,0 +1,101 @@
+﻿<Window x:Class="lb21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Text Editor" Height="500" Width="900">
+
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+
+            <Button x:Name="btnOpen" Click="Open_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE8E5;"
+                       FontSize="16"
+                       Margin="0,0,5,0"/>
+                    <TextBlock Text="Open"/>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnSave" Click="Save_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE74E;"
+                       FontSize="16"
+                       Margin="0,0,5,0"/>
+                    <TextBlock Text="Save"/>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnNew" Click="NewWindow_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE710;"
+                       FontSize="16"
+                       Margin="0,0,5,0"/>
+                    <TextBlock Text="New"/>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnLang" Click="ChangeLanguage_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE774;"
+                       FontSize="16"
+                       Margin="0,0,5,0"/>
+                    <TextBlock Text="Language"/>
+                </StackPanel>
+            </Button>
+
+            <Separator/>
+
+         
+            <Button Click="InsertImage_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                       Text="&#xE91B;"
+                       FontSize="16"
+                       Margin="0,0,5,0"/>
+                    <TextBlock Text="Image"/>
+                </StackPanel>
+            </Button>
+
+            <Separator/>
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold" Width="40">
+                <TextBlock Text="B" FontWeight="Bold" TextAlignment="Center"/>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic" Width="40">
+                <TextBlock Text="I" FontStyle="Italic" TextAlignment="Center"/>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline" Width="40">
+            <TextBlock Text="U" TextDecorations="Underline" TextAlignment="Center"/>
+        </ToggleButton>
+
+            <Separator/>
+            <Button Command="EditingCommands.AlignLeft" Content="⬅️" Width="40"/>
+        <Button Command="EditingCommands.AlignCenter" Content="↔️" Width="40"/>
+        <Button Command="EditingCommands.AlignRight" Content="➡️" Width="40"/>
+
+            <Separator/>
+            <Button Click="InsertImage_Click"
+            FontFamily="Segoe MDL2 Assets"
+            Content="&#xE91B;"
+            Width="40"
+            ToolTip="Insert Image"/>
+
+        <Separator/>
+
+        <ComboBox Name="cmbFontFamily" Width="150"
+              SelectionChanged="cmbFontFamily_SelectionChanged"/>
+
+        <ComboBox Name="cmbFontSize" Width="60"
+              IsEditable="True"
+              TextBoxBase.TextChanged="cmbFontSize_TextChanged"/>
+
+        </ToolBar>
+
+        <RichTextBox Name="rtbEditor"
+                     TextChanged="rtbEditor_TextChanged"
+                     SelectionChanged="rtbEditor_SelectionChanged"
+                     Margin="5"/>
+    </DockPanel>
+</Window>
