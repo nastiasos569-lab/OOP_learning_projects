@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\lab21\lab21\bin\Debug\lab21.exe.config
+C:\Users\user\source\repos\lab21\lab21\bin\Debug\lab21.exe
+C:\Users\user\source\repos\lab21\lab21\bin\Debug\lab21.pdb
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.EditorForm.resources
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.MainForm.resources
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.Properties.Resources.resources
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.csproj.GenerateResource.cache
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.exe
+C:\Users\user\source\repos\lab21\lab21\obj\Debug\lab21.pdb
