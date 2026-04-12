@@ -1,9 +1,13 @@
 ﻿using Microsoft.Win32;
+using System;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace lb21
 {
@@ -14,96 +18,45 @@ namespace lb21
             InitializeComponent();
 
             cmbFontFamily.ItemsSource = Fonts.SystemFontFamilies;
-            cmbFontSize.ItemsSource = new double[] { 8, 10, 12, 14, 16, 18, 20, 22, 24, 28, 36, 48, 72 };
-        }
-        private bool isHighlighting = false;
 
-        private void rtbEditor_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (isHighlighting) return;
-
-            isHighlighting = true;
-            HighlightSyntax();
-            isHighlighting = false;
-        }
-
-        private void HighlightSyntax()
-        {
-            TextPointer caretPosition = rtbEditor.CaretPosition;
-
-            TextRange fullRange = new TextRange(
-                rtbEditor.Document.ContentStart,
-                rtbEditor.Document.ContentEnd);
-
-            fullRange.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Black);
-
-            string[] keywords =
+            cmbFontSize.ItemsSource = new double[]
             {
-        "int","double","float","string",
-        "if","else","for","while",
-        "return","class","public",
-        "private","void","using","namespace"
-    };
-
-            foreach (string keyword in keywords)
-            {
-                TextPointer position = rtbEditor.Document.ContentStart;
-
-                while (position != null &&
-                       position.CompareTo(rtbEditor.Document.ContentEnd) < 0)
-                {
-                    if (position.GetPointerContext(LogicalDirection.Forward)
-                        == TextPointerContext.Text)
-                    {
-                        string text = position.GetTextInRun(LogicalDirection.Forward);
-                        int index = text.IndexOf(keyword);
-
-                        if (index >= 0)
-                        {
-                            TextPointer start = position.GetPositionAtOffset(index);
-                            TextPointer end = start.GetPositionAtOffset(keyword.Length);
-
-                            new TextRange(start, end)
-                                .ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Blue);
-                        }
-                    }
-                    position = position.GetNextContextPosition(LogicalDirection.Forward);
-                }
-            }
-
-            rtbEditor.CaretPosition = caretPosition;
+                8, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36
+            };
         }
 
-
-        private void Open_Click(object sender, RoutedEventArgs e)
+        private void Open_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Filter = "Text Files|*.txt|Rich Text Format|*.rtf";
+
             if (dlg.ShowDialog() == true)
             {
-                MessageBox.Show(dlg.FileName);
+                TextRange range = new TextRange(
+                    rtbEditor.Document.ContentStart,
+                    rtbEditor.Document.ContentEnd);
 
-                TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
                 using (FileStream fs = new FileStream(dlg.FileName, FileMode.Open))
                 {
-                    string ext = Path.GetExtension(dlg.FileName).ToLower();
-                    if (ext == ".rtf")
+                    if (Path.GetExtension(dlg.FileName).ToLower() == ".rtf")
                         range.Load(fs, DataFormats.Rtf);
-                    else if (ext == ".txt")
-                        range.Load(fs, DataFormats.Text);
                     else
-                        MessageBox.Show("Непідтримуваний формат файлу");
+                        range.Load(fs, DataFormats.Text);
                 }
             }
         }
-       
-        private void Save_Click(object sender, RoutedEventArgs e)
+
+        private void Save_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
             dlg.Filter = "Text Files|*.txt|Rich Text Format|*.rtf";
+
             if (dlg.ShowDialog() == true)
             {
-                TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
+                TextRange range = new TextRange(
+                    rtbEditor.Document.ContentStart,
+                    rtbEditor.Document.ContentEnd);
+
                 using (FileStream fs = new FileStream(dlg.FileName, FileMode.Create))
                 {
                     if (Path.GetExtension(dlg.FileName).ToLower() == ".rtf")
@@ -114,88 +67,110 @@ namespace lb21
             }
         }
 
-        private void NewWindow_Click(object sender, RoutedEventArgs e)
+        private void New_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            MainWindow newWin = new MainWindow();
-            newWin.Show();
+            new MainWindow().Show();
         }
 
-        private void InsertImage_Click(object sender, RoutedEventArgs e)
+        private int langIndex = 0;
+
+        private void ChangeLanguage_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp;*.gif";
-            if (dlg.ShowDialog() == true)
+            string[] langs =
             {
-                var img = new System.Windows.Controls.Image();
-                img.Source = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(dlg.FileName));
-                img.Width = 200;
-                InlineUIContainer container = new InlineUIContainer(img, rtbEditor.CaretPosition);
+        "Resources/StringsEn.xaml",
+        "Resources/StringsUk.xaml",
+        "Resources/StringsPl.xaml"
+    };
+
+            langIndex = (langIndex + 1) % langs.Length;
+
+            var dict = new ResourceDictionary
+            {
+                Source = new Uri(langs[langIndex], UriKind.Relative)
+            };
+            var dictionaries = Application.Current.Resources.MergedDictionaries;
+
+            var oldLangDict = dictionaries
+                .FirstOrDefault(d => d.Source != null &&
+                                     d.Source.OriginalString.Contains("Strings"));
+
+            if (oldLangDict != null)
+            {
+                int index = dictionaries.IndexOf(oldLangDict);
+                dictionaries.Remove(oldLangDict);
+
+                dictionaries.Insert(index, dict);
+            }
+            else
+            {
+                dictionaries.Add(dict);
             }
         }
 
-        private void cmbFontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void InsertImage_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp";
+
+            if (dlg.ShowDialog() == true)
+            {
+                Image img = new Image();
+                img.Source = new BitmapImage(new Uri(dlg.FileName));
+                img.Width = 200;
+
+                var para = new Paragraph();
+                para.Inlines.Add(new InlineUIContainer(img));
+                rtbEditor.Document.Blocks.Add(para);
+            }
+        }
+
+        private void cmbFontFamily_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             if (cmbFontFamily.SelectedItem != null)
-                rtbEditor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+            {
+                rtbEditor.Selection.ApplyPropertyValue(
+                    TextElement.FontFamilyProperty,
+                    cmbFontFamily.SelectedItem);
+            }
         }
 
-
-        private void cmbFontSize_TextChanged(object sender, TextChangedEventArgs e)
+        private void cmbFontSize_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             if (double.TryParse(cmbFontSize.Text, out double size))
-                rtbEditor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, size);
+            {
+                rtbEditor.Selection.ApplyPropertyValue(
+                    TextElement.FontSizeProperty,
+                    size);
+            }
         }
-
 
         private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            object temp = rtbEditor.Selection.GetPropertyValue(Inline.FontWeightProperty);
-            btnBold.IsChecked = (temp != DependencyProperty.UnsetValue) && (temp.Equals(FontWeights.Bold));
+            object temp;
 
-            temp = rtbEditor.Selection.GetPropertyValue(Inline.FontStyleProperty);
-            btnItalic.IsChecked = (temp != DependencyProperty.UnsetValue) && (temp.Equals(FontStyles.Italic));
-        }
 
-        public enum Language
-        {
-            Ukrainian,
-            English,
-            Chinese
-        }
+            temp = rtbEditor.Selection.GetPropertyValue(TextElement.FontWeightProperty);
+            btnBold.IsChecked = (temp != DependencyProperty.UnsetValue) &&
+                                ((FontWeight)temp == FontWeights.Bold);
 
-        private Language currentLanguage = Language.Ukrainian;
+        
+            temp = rtbEditor.Selection.GetPropertyValue(TextElement.FontStyleProperty);
+            btnItalic.IsChecked = (temp != DependencyProperty.UnsetValue) &&
+                                  ((FontStyle)temp == FontStyles.Italic);
 
-        private void ChangeLanguage_Click(object sender, RoutedEventArgs e)
-        {
-            switch (currentLanguage)
-            {
-                case Language.Ukrainian:
-                    btnOpen.Content = "📂 Open";
-                    btnSave.Content = "💾 Save";
-                    btnNew.Content = "📄 New Window";
-                    this.Title = "Text Editor";
-                    btnLang.Content = "🌐 Language";
-                    currentLanguage = Language.English;
-                    break;
+            var dec = rtbEditor.Selection.GetPropertyValue(Inline.TextDecorationsProperty);
+            btnUnderline.IsChecked =
+                (dec != DependencyProperty.UnsetValue) &&
+                (dec is TextDecorationCollection collection) &&
+                collection.Count > 0;
 
-                case Language.English:
-                    btnOpen.Content = "📂 打开";
-                    btnSave.Content = "💾 保存";
-                    btnNew.Content = "📄 新窗口";
-                    this.Title = "文本编辑器";
-                    btnLang.Content = "🌐 语言";
-                    currentLanguage = Language.Chinese;
-                    break;
+   
+            temp = rtbEditor.Selection.GetPropertyValue(TextElement.FontFamilyProperty);
+            cmbFontFamily.SelectedItem = temp;
 
-                case Language.Chinese:
-                    btnOpen.Content = "📂 Відкрити";
-                    btnSave.Content = "💾 Зберегти";
-                    btnNew.Content = "📄 Нове вікно";
-                    this.Title = "Текстовий редактор";
-                    currentLanguage = Language.Ukrainian;
-                    btnLang.Content = "🌐Мова";
-                    break;
-            }
+            temp = rtbEditor.Selection.GetPropertyValue(TextElement.FontSizeProperty);
+            cmbFontSize.Text = temp.ToString();
         }
     }
     }

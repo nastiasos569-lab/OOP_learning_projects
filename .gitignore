@@ -1,0 +1,4 @@
+echo ".vs/" >> .gitignore
+echo "[Bb]in/" >> .gitignore
+echo "[Ob]j/" >> .gitignore
+echo "*.vsidx" >> .gitignore

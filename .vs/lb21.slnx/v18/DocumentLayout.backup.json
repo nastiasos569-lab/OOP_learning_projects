@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\lb21\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|c:\\users\\user\\source\\repos\\lb21\\lb21\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\customcommands..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\customcommands..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\resources\\stringsen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\resources\\stringsen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\resources\\stringsuk.xaml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\resources\\stringsuk.xaml||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|C:\\Users\\user\\source\\repos\\lb21\\lb21\\resources\\stringspl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7173F0BC-BC69-48EC-B25C-07D0A72C2C22}|lb21\\lb21.csproj|solutionrelative:lb21\\resources\\stringspl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StringsPl.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsPl.xaml",
+              "RelativeDocumentMoniker": "lb21\\Resources\\StringsPl.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsPl.xaml",
+              "RelativeToolTip": "lb21\\Resources\\StringsPl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T20:22:54.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StringsEn.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsEn.xaml",
+              "RelativeDocumentMoniker": "lb21\\Resources\\StringsEn.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsEn.xaml",
+              "RelativeToolTip": "lb21\\Resources\\StringsEn.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T20:18:46.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "lb21\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\MainWindow.xaml.cs",
+              "RelativeToolTip": "lb21\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T23:33:09.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\App.xaml",
+              "RelativeDocumentMoniker": "lb21\\App.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\App.xaml",
+              "RelativeToolTip": "lb21\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T20:29:19.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\App.xaml.cs",
+              "RelativeDocumentMoniker": "lb21\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\App.xaml.cs",
+              "RelativeToolTip": "lb21\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T20:29:15.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "lb21\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\MainWindow.xaml",
+              "RelativeToolTip": "lb21\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-03T23:33:10.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomCommands..cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\CustomCommands..cs",
+              "RelativeDocumentMoniker": "lb21\\CustomCommands..cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\CustomCommands..cs",
+              "RelativeToolTip": "lb21\\CustomCommands..cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T20:02:13.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StringsUk.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsUk.xaml",
+              "RelativeDocumentMoniker": "lb21\\Resources\\StringsUk.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\lb21\\lb21\\Resources\\StringsUk.xaml",
+              "RelativeToolTip": "lb21\\Resources\\StringsUk.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T20:16:36.955Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
