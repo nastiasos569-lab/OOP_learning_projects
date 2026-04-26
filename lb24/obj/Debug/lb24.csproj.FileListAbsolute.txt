@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.Form1.resources
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.Properties.Resources.resources
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.csproj.GenerateResource.cache
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\lb24\lb24\bin\Debug\lb24.exe.config
+C:\Users\user\source\repos\lb24\lb24\bin\Debug\lb24.exe
+C:\Users\user\source\repos\lb24\lb24\bin\Debug\lb24.pdb
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.exe
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.pdb
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.Form2.resources
+C:\Users\user\source\repos\lb24\lb24\obj\Debug\lb24.Form3.resources
